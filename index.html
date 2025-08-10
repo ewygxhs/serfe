@@ -215,5 +215,11 @@
         sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals allow-top-navigation"
         allowfullscreen
         style="display:none;"></iframe>
+
+    <script>
+  document.addEventListener('WeixinJSBridgeReady', function() {
+    WeixinJSBridge.call('hideOptionMenu');  // 隐藏右上角菜单
+  });
+</script>
 </body>
 </html>
